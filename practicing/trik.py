@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/trik"""
 state = [True, False, False]
 for char in input():
     if char == 'A':

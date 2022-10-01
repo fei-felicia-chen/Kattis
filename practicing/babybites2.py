@@ -1,3 +1,4 @@
+"""smarter way to do baby bites"""
 nBites = int(input())
 babyWords = list(input().split())
 conclu = "makes sense"

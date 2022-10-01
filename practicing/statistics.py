@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/statistics"""
 case = 0
 while True:
     case += 1

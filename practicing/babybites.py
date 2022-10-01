@@ -1,3 +1,4 @@
+"""dumb way to do babybites, idk why i did this"""
 nBites = int(input())
 biteCounts = list()
 for bite in (list(input().split())):
