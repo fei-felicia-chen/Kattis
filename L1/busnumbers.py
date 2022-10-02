@@ -1,12 +1,12 @@
+"""https://open.kattis.com/problems/busnumbers"""
+# see my other bus numbers submission
 numOfBuses = int(input())
 busNumbers = list(map(int, input().split()))
 busNumbers.sort()
 shortRep = list()
 
 i = 0
-while True:
-    if i >= numOfBuses:
-        break
+while i < numOfBuses:
     myBus = busNumbers[i]
     if str(myBus) not in ' '.join(shortRep):
         shortRep.append(str(myBus)) 

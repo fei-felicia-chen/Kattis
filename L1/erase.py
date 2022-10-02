@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/erase"""
 n = int(input())
 before = input()
 after = input()

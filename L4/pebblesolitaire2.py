@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/pebblesolitaire2"""
 q = list()
 games = dict()
 
@@ -15,15 +16,17 @@ for game in range(int(input())):
     q.clear()
     games.clear()
     line = input()
-    games[line] = line.count('o')
+    score = line.count('o')
+    games[line] = 1
     play(list(line))
     while q:
         line = q.pop()
-        lineString = ''.join(line)
-        if lineString in games:
+        if (lineString := ''.join(line)) in games:
             continue
-        games[lineString] = line.count('o')
+        lineScore = line.count('o')
+        if lineScore < score:
+            score = lineScore
+        games[lineString] = 1
         play(line)
-    
-    score_min = min(games.keys(), key=(lambda k: games[k]))        
-    print(games[score_min])
+   
+    print(score)

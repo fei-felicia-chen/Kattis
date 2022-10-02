@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/commercials"""
 n, cost = map(int, input().split())
 revenues = map(int, input().split())
 profits = [revenue - cost for revenue in revenues]

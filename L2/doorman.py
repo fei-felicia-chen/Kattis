@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/doorman"""
 class Node:
     def __init__(self, data):
         self.data = data
@@ -86,10 +87,8 @@ if __name__ == "__main__":
         if abs(diff) < iq:
             if line.head.get() == "W":
                 diff -= 1
-                #print(diff, "bonjour1")
             if line.head.get() == "M":
                 diff += 1
-                #print(diff, "bonjour2")
             entered += 1
             line.removeFirst()
             

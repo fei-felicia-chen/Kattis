@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/quickbrownfox"""
 for i in range(int(input())):
     phrase = input().lower()
     missingLetters = []

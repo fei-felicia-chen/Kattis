@@ -1,3 +1,4 @@
+// https://open.kattis.com/problems/doorman
 package main
 
 import (
@@ -57,8 +58,8 @@ func (club *List) HasSecond() bool {			// check if has at least 2 nodes
 
 func (club *List) RemoveSecond() {
 	if club.head.next.next != nil {
-		club.head.next = club.head.next.next // first is now pointed (did u mean poiting) to third instead of second??? i think ?? IS IT? R U SURE???
-		club.head.next.next.prev = club.head.next.next // RECALL FIRST IS NOW POINTING TO THIRD INSTEAD OF SECOND (IF UR RIGHT THAT IS)
+		club.head.next = club.head.next.next // first is now pointed to third instead of second
+		club.head.next.next.prev = club.head.next.next
 	} else {
 		club.head.next = nil				// nothing to point anymore
 		club.tail = club.head

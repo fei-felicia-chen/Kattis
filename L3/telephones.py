@@ -1,7 +1,7 @@
-while True:
-    calls, intervals = map(int, input().split())
+"""https://open.kattis.com/problems/telephones"""
+while (cmd := input().split()) != ['0', '0']:
+    calls, intervals = map(int, cmd)
     phones = list()
-    if calls == intervals == 0: break
     for call in range(calls):
         _, _, start, dur = map(int, input().split())
         phones.append((start, start + dur))

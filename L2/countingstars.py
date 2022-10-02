@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/countingstars"""
 def hasTop(matrix, i, j):
     if (i - 1 < 0):                                    # check for border
         return False
@@ -38,15 +39,14 @@ def queueNeighbours(matrix, i, j, m, n, visited, queue):
 
 caseCount = 1
 while True:
-    starCount = 0
     try:
-        line = input()                                     # get row and col
+        line = input()                                 # get row and col
     except:
         break
     
     if not line:                                       # check for empty input
         break
-    
+    starCount = 0
     m, n = [int(x) for x in line.split()]              # m = total row, col = pixel per row
     
     sky, queue = [], []                                

@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class bachetsgame {
-
+    // https://open.kattis.com/problems/bachetsgame
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()) {

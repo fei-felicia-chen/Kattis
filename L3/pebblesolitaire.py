@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/pebblesolitaire"""
 def checkNextMoves(line, q):
     for i in range(10):
         jumpable = line[i:i+3]
@@ -18,7 +19,7 @@ for game in range(int(input())):
         score = 12
         while q:
             line = q.pop()
-            if score > line.count('o'):
-                score = line.count('o')
+            if score > (curr := line.count('o')):
+                score = curr
             checkNextMoves(line, q)
         print(score)
