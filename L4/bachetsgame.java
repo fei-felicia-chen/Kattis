@@ -27,5 +27,6 @@ public class bachetsgame {
                 System.out.println("Ollie wins");
             }
         }
+        sc.close();
     }
 }
