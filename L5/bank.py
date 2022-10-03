@@ -9,5 +9,4 @@ for _ in range(N):
         for minute in range(time, -1, -1):          # check for every min of the wait time 
             if q[minute] < cash:                    # if there is anyone depositing less money
                 q[minute], cash = cash, q[minute]   # swap and check again
-            print(q)
 print(sum(q))
