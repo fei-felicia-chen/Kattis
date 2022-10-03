@@ -24,8 +24,8 @@ func main() {
         }
     }
     sum := 0;
-    for i := 0; i < T; i++ {
-        sum += q[i];
+    for _, a := range q {
+        sum += a;
     }
     fmt.Printf("%v", sum)
 }
