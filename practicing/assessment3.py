@@ -24,6 +24,8 @@ def main():
 	matrix_rows,_  = map(int, input().split())
 	for _ in range(matrix_rows):
 		matrix.append(list(map(int, input().split())))
+  
+  
 	result = funcMatrix(matrix)
 	print(result)
 

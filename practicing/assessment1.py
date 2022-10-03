@@ -7,6 +7,8 @@ def funcAlphabeticOrder(inputSting):
 def main():
 	#input for inputSting
 	inputSting = str(input()).lower()
+ 
+ 
 	result = funcAlphabeticOrder(inputSting)
 	print(result)
 
