@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/encodedmessage"""
 testCases = int(input())
 for _ in range(testCases):
     encoded = input()

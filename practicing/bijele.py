@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/bijele"""
 default = [1, 1, 2, 2, 2, 8]
 found = list(map(int, input().split()))
 missing = []

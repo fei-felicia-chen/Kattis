@@ -1,14 +1,11 @@
-"""dumb way to do babybites, idk why i did this"""
+"""https://open.kattis.com/problems/babybites"""
 nBites = int(input())
-biteCounts = list()
-for bite in (list(input().split())):
-    try:
-        biteCounts.append(int(bite))
-    except:  
-        biteCounts.append(1) if not biteCounts else biteCounts.append(biteCounts[-1] + 1)
-
-if biteCounts != list(range(1, nBites + 1)):
-    print("something is fishy")
-else:
-    print("makes sense")
-    
+babyWords = list(input().split())
+conclu = "makes sense"
+for i in (range(nBites)):
+    if babyWords[i] == "mumble" or babyWords[i] == str(i + 1):
+        continue
+    else:
+        conclu = "something is fishy"
+        break
+print(conclu)

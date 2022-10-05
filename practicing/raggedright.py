@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/raggedright"""
 lengths = []
 score = 0
 while True:
