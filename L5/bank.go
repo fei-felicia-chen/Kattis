@@ -27,5 +27,5 @@ func main() {
     for _, a := range q {
         sum += a;
     }
-    fmt.Printf("%v", sum)
+    fmt.Println(sum)
 }
