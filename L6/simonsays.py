@@ -1,5 +1,5 @@
 """https://open.kattis.com/problems/simonsays"""
 for _ in range(int(input())):
-    wordList = input().split()
-    if wordList[0:2] == ['Simon', 'says']: 
-        print(' '.join(wordList[2:]))
+    phrase = input()
+    if phrase[:10] == "Simon says": 
+        print(phrase[11:])
