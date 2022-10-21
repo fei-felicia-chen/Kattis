@@ -5,7 +5,6 @@ def knock(s, d, fallen):
             fallen.add(domino)
             if domino in d:
                 knock(d[domino], d, fallen)
-        
 
 for _ in range(int(input())):
     n, m, l = map(int, input().split())

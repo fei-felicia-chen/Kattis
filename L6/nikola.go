@@ -1,3 +1,4 @@
+// https://open.kattis.com/problems/nikola
 package main
 
 import (
@@ -25,11 +26,10 @@ func solve(x int, y int) int {
 	} else if (arr[x][y] != 0) {
 		return arr[x][y]
 	} else {
-		arr[x][y] = Min(solve(x+y+1, y+1), solve(x-y, y))+fees[x]
+		arr[x][y] = Min(solve(x+y+1, y+1), solve(x-y, y)) + fees[x]
 		return arr[x][y]
 	}
 }
-
 
 func main() {
 	fmt.Scan(&n)
