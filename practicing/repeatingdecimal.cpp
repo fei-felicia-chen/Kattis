@@ -13,7 +13,7 @@ int main()
         while (c--)
         {
             a *= 10;
-            long x = a / b;
+            int x = a / b;
             cout << x;
             a -= b * x;
         }
