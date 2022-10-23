@@ -6,9 +6,9 @@ using namespace std;
 
 typedef long long ll;
 
-set<int> divisors(int n)
+set<ll> divisors(ll n)
 {
-    set<int> res({0});
+    set<ll> res({0});
     for (ll i = 1; i <= sqrt(n) + 2; i++)
     {
         if (n % i == 0)
@@ -27,10 +27,10 @@ set<int> divisors(int n)
 
 int main(int argc, char const *argv[])
 {
-    int n;
+    ll n;
     cin >> n;
-    set<int> res = divisors(n);
-    for(int x: res)
+    set<ll> res = divisors(n);
+    for(ll x: res)
     {
        cout << x << " ";
     }
