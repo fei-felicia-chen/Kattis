@@ -58,8 +58,3 @@ for _ in range(tc):
             if v > h:
                 h = v
         bests = []
-        
-        
-    
-    
-    
