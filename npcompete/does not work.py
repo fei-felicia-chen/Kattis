@@ -9,14 +9,14 @@ class Node:
         if n not in self.data:
             self.data.append(n)
     
-    def createChilds(self, n):
+    def createChildren(self, n):
         self.upp = Node()
         self.mid = Node()
         self.low = Node()
         if n > 1:
-            self.upp.createChilds(n - 1)
-            self.mid.createChilds(n - 1)
-            self.low.createChilds(n - 1)
+            self.upp.createChildren(n - 1)
+            self.mid.createChildren(n - 1)
+            self.low.createChildren(n - 1)
 
 class Tree:
     def __init__(self, n):
@@ -58,9 +58,3 @@ for _ in range(tc):
             if v > h:
                 h = v
         bests = []
-        for k, v in 
-        
-        
-    
-    
-    

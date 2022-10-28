@@ -1,8 +1,6 @@
 n, k = map(int, input().split())
 numList = list(map(int, input().split()))
 i = k-1
-toReturn = ""
 while i < n:
-    toReturn += str(numList[i]) + " "
+    print(numList[i], end=' ', flush=False)
     i += k
-print(toReturn)
