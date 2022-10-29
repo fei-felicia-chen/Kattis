@@ -1,3 +1,4 @@
+// https://open.kattis.com/problems/sortofsorting
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -13,7 +14,7 @@ bool compare_first_two(const string &a, const string &b)
         return a[0] < b[0];                 
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     int n;
     vector<string> last_names;
