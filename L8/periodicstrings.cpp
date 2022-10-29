@@ -6,9 +6,8 @@ using namespace std;
 bool kperiodic(int k, string s)
 {
     // If s is not divisible by k, pass
-    if (s.size() % k != 0){
+    if (s.size() % k != 0)
         return false;   
-    }
 
     // Get s[0:k] and compare
     string curr = (s.substr(0, k));
@@ -27,11 +26,11 @@ int main()
 {
     string s;
     cin >> s;
-    for (int i = 1; i <= s.size(); i++)
+    for (int k = 1; k <= s.size(); k++)
     {
-        if (kperiodic(i, s))
+        if (kperiodic(k, s))
         {
-            cout << i;
+            cout << k;
             break;
         }
     }
