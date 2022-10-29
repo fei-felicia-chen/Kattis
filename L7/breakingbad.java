@@ -27,7 +27,6 @@ public class breakingbad {
     static HashMap<String, Set<String>> myMap; // map of {ingredient : set(sus ingredients)}
     static Set<String> walter, jesse;
     static Set<String> allIngredients;
-    static boolean good;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -35,8 +34,8 @@ public class breakingbad {
         myMap = new HashMap<>();
         walter = new HashSet<>();
         jesse = new HashSet<>();
-        good = true;
         allIngredients = new HashSet<>();
+        boolean good = true;
 
         // Get all ingredients, add to all ingredients and initialize set for map
         for (int i = 0; i < N; i++) {
