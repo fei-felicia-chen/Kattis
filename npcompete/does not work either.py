@@ -1,3 +1,4 @@
+# does not work
 def divisors(n):
     result = list()
     for i in range(1, int(n**0.5)+1):

@@ -31,8 +31,6 @@ int main(int argc, char const *argv[])
     cin >> n;
     set<ll> res = divisors(n);
     for(ll x: res)
-    {
        cout << x << " ";
-    }
     return 0;
 }
