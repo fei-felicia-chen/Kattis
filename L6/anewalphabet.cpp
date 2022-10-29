@@ -1,4 +1,4 @@
-/*"""https://open.kattis.com/problems/anewalphabet"""*/
+// https://open.kattis.com/problems/anewalphabet
 #include <iostream>
 #include <map>
 

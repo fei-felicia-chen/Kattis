@@ -1,13 +1,7 @@
-// DOES NOT WORK IDK WHY
+// https://open.kattis.com/problems/periodicstrings
 #include <iostream>
 
 using namespace std;
-
-string shiftString(string s)
-{
-    s = s.back() + s.substr(0, s.size() - 1);
-    return s;
-}
 
 bool kperiodic(int k, string s)
 {
@@ -23,13 +17,13 @@ bool kperiodic(int k, string s)
     {
         if (copy.rfind(curr, 0) != 0)
             return false;
-        copy = copy.substr(k, copy.size());
-        curr = shiftString(curr);
-    }    
+        copy = copy.substr(k, copy.size());     // copy = copy[k:]
+        curr = curr.back() + curr.substr(0, curr.size() - 1);
+    }
     return true;
 }
 
-int main(void)
+int main()
 {
     string s;
     cin >> s;
@@ -38,6 +32,7 @@ int main(void)
         if (kperiodic(i, s))
         {
             cout << i;
+            break;
         }
     }
     return 0;
