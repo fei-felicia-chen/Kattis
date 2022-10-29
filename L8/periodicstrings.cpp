@@ -17,8 +17,8 @@ bool kperiodic(int k, string s)
     {
         if (copy.rfind(curr, 0) != 0)
             return false;
-        copy = copy.substr(k, copy.size());     // copy = copy[k:]
-        curr = curr.back() + curr.substr(0, curr.size() - 1);
+        copy = copy.substr(k, copy.size());                     // copy = copy[k:]
+        curr = curr.back() + curr.substr(0, curr.size() - 1);   // shift curr string
     }
     return true;
 }
