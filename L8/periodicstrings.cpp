@@ -5,7 +5,7 @@ using namespace std;
 
 bool kperiodic(int k, string s)
 {
-    // If s is not divisible by k, pass
+    // Make sure length is divisible by s
     if (s.size() % k != 0)
         return false;   
 
