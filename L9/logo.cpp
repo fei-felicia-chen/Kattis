@@ -5,8 +5,8 @@
 using namespace std;
 
 int dist(double x, double y) {
-    double toreturn = sqrt(pow(x, 2) + pow(y, 2));
-    return round(toreturn);
+    double distance = sqrt(pow(x, 2) + pow(y, 2));
+    return round(distance);
 }
 
 int main()
