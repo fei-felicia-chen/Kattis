@@ -1,3 +1,4 @@
+"""https://open.kattis.com/problems/periodicstrings"""
 s = input()
 
 def periodic(k):
