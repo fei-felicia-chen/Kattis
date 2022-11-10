@@ -1,14 +1,15 @@
+"""https://open.kattis.com/problems/periodicstrings"""
 s = input()
 
 def periodic(k):
     if len(s) % k != 0:
         return False
     curr = s[:k]
-    s_copy = s[:]
-    while s_copy:
-        if not s_copy.startswith(curr):
+    i = 0
+    while i < len(s):
+        if not s[i:i+k] == curr:
             return False
-        s_copy = s_copy[k:]
+        i += k
         curr = curr[-1] + curr[:-1]
     return True
 

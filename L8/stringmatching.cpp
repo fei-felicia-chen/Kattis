@@ -1,5 +1,6 @@
 // https://open.kattis.com/problems/stringmatching
 #include <iostream>
+#include <string>
 
 using namespace std;
 

@@ -7,7 +7,7 @@ using namespace std;
 
 bool compare_first_two(const string &a, const string &b)
 {
-    // compares first two letters
+    // Compare first two letters
     if (a[0] == b[0])
         return a[1] < b[1];                 
     else
