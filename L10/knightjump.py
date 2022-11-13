@@ -2,7 +2,14 @@ from collections import deque
 
 jump_dir = {(-2, 1), (-2, -1), (1, 2), (1, -2), (-1, 2), (2, 1), (2, -1), (-1, -2)}
 n = int(input())
-arr = [[c for c in input()] for _ in range(n)]
+x, y = -1, -1
+arr = []
+for i in range(n):
+    row = input()
+    arr.append(row)
+    for j in range(n):
+        if row[j] == 'K':
+            x, y = i, j
 visited = [[False for __ in range(n)] for _ in range(n)]
 
 def valid_pos(x, y):
@@ -10,20 +17,12 @@ def valid_pos(x, y):
         return False
     if y < 0 or y >= n:
         return False
-    if arr[x][y] != '.':
+    if arr[x][y] == '#':
         return False
     if visited[x][y]:
         return False
     return True
-    
 
-# Find knight
-x, y = (-1, -1)
-for i in range(n):
-    for j in range(n):
-        if arr[i][j] == 'K':
-            x, y = i, j
-            break
         
 # Queue possible moves
 q = deque()
@@ -37,6 +36,6 @@ while q:
         r, c = dir
         if valid_pos(r + x, c + y):
             q.append((r+x, c+y, score+1))
-            visited[x][y] = True
+            visited[r+x][c+y] = True
             
 print(-1)
