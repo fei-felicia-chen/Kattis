@@ -30,11 +30,11 @@ int main()
     }
     if (escape)
     {
-        printf("The gopher can escape through the hole at (%.3f,%.3f).", sx, sy);
+        printf("The gopher can escape through the hole at (%.3f,%.3f).\n", sx, sy);
     }
     else
     {
-        cout << "The gopher cannot escape." << endl;
+        printf("The gopher cannot escape.\n");
     }
     return 0;
 }
