@@ -41,10 +41,21 @@ class LinkedList:
             toRemove = prev.next
             tmp1 = toRemove.next
             prev.next = tmp1
+    
+    def __str__(self):
+        if self.head is None:
+            return "()"
+        to_return = str(self.head)
+        cur = self.head
+        while cur.next is not None:
+            to_return += " -> " + str(cur.next)
+            cur = cur.next
+        return to_return
 
 lst = LinkedList()
 lst.addLast("b")
 lst.addLast("c")
 lst.addLast("d")
+print(str(lst))
 lst.remove(0)
-print(lst.get(0))
+print(str(lst))
