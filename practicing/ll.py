@@ -45,12 +45,12 @@ class LinkedList:
     def __str__(self):
         if self.head is None:
             return "()"
-        to_return = str(self.head)
-        cur = self.head
-        while cur.next is not None:
-            to_return += " -> " + str(cur.next)
-            cur = cur.next
-        return to_return
+        s = str(self.head)
+        curr = self.head
+        while curr.next is not None:
+            s += " -> " + str(curr.next)
+            curr = curr.next
+        return s
 
 lst = LinkedList()
 lst.addLast("b")
