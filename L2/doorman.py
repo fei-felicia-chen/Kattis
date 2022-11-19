@@ -32,7 +32,7 @@ class ClubLine:
             self.last.next = node
             tmp = self.last
             self.last = node
-            self.last.last = None
+            self.last = None
             self.last.prev = tmp
 
     def removeFirst(self):
