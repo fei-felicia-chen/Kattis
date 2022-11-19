@@ -1,9 +1,7 @@
 t = int(input())
 for _ in range(t):
-    num = []
     n = int(input())
-    for _ in range(n):
-        num.append(input())
+    num = [input() for _ in range(n)]
     num.sort()
     result = "YES"
     for i in range(n-1):
