@@ -7,10 +7,6 @@ class Node:
         return "(" + str(self.data) + ")"
 
 class LinkedList:
-    def __init__(self, head):
-        self.head = head
-        self.last = head
-    
     def __init__(self):
         self.head = None
         self.last = None
@@ -50,4 +46,5 @@ lst = LinkedList()
 lst.addLast("b")
 lst.addLast("c")
 lst.addLast("d")
-print(lst.get(2))
+lst.remove(0)
+print(lst.get(0))
