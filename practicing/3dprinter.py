@@ -1,3 +1,2 @@
 from math import log, ceil
-n = float(input())
-print(int(ceil(log(n, 2) + 1)))
+print(int(ceil(log(float(input()), 2) + 1)))
