@@ -39,8 +39,12 @@ class LinkedList:
         else:
             prev = self.get(index-1)
             toRemove = prev.next
-            tmp1 = toRemove.next
-            prev.next = tmp1
+            if toRemove != self.last:
+                tmp1 = toRemove.next
+                prev.next = tmp1
+            else:
+                prev.next = None
+                self.last = None
     
     def __str__(self):
         if self.head is None:
