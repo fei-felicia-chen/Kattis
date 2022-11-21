@@ -11,7 +11,7 @@ class LinkedList:
         self.head = None
         self.last = None
 
-    def addLast(self, last):
+    def append(self, last):
         node = Node(last)
         if self.head is None:
             self.head = node
@@ -57,9 +57,9 @@ class LinkedList:
         return s
 
 lst = LinkedList()
-lst.addLast("b")
-lst.addLast("c")
-lst.addLast("d")
+lst.append("b")
+lst.append("c")
+lst.append("d")
 print(str(lst))
 lst.remove(0)
 print(str(lst))
