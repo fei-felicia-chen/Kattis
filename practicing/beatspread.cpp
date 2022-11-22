@@ -13,7 +13,7 @@ int main(){
             printf("impossible\n");
         else
         {
-            int x = (s + d)/2;
+            int x = (s + d) / 2;
             int y = s - x;
             printf("%d %d\n", x, y);
         }
